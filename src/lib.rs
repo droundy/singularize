@@ -20,6 +20,7 @@ const UNCOUNTABLE: &[&'static str] = &[
     "music",
     "help",
     "luck",
+    "news",
     "oil",
     "progress",
     "rain",
@@ -38,19 +39,28 @@ const IRREGULAR: &[(&'static str, &'static str)] = &[
     ("foot", "feet"),
     ("tooth", "teeth"),
     ("mouse", "mice"),
-];
-const WORDS: &[(&'static str, &'static str)] = &[("testis", "testes")];
-const ENDINGS: &[(&'static str, &'static str)] = &[
-    ("vertex", "vertices"),
-    ("matrix", "matrices"),
-    ("index", "indices"),
-    //
-    ("sis", "ses"),
+    ("thief", "thieves"),
     //
     ("alias", "aliases"),
     ("status", "statuses"),
     ("campus", "campuses"),
     ("bus", "buses"),
+    ("af", "aves"),
+    ("ife", "ives"),
+    //
+    ("osis", "oses"),
+    ("psis", "pses"),
+];
+const WORDS: &[(&'static str, &'static str)] = &[("testis", "testes"), ("ox", "oxen")];
+const ENDINGS: &[(&'static str, &'static str)] = &[
+    ("vertex", "vertices"),
+    ("matrix", "matrices"),
+    ("index", "indices"),
+    ("buffalo", "buffaloes"),
+    ("quiz", "quizzes"),
+    ("potato", "potatoes"),
+    ("hero", "heroes"),
+    ("ango", "angoes"),
     //
     ("x", "xes"),
     ("ch", "ches"),
@@ -65,8 +75,13 @@ const ENDINGS: &[(&'static str, &'static str)] = &[
     ("y", "ies"),
     //
     ("ffe", "ffes"),
-    ("fe", "ves"),
+    // ("fe", "ves"),
     ("lf", "lves"),
+    //
+    ("s", "ses"),
+    //
+    ("rse", "rses"),
+    ("use", "uses"),
 ];
 
 fn word_match(w: &str, end: &str) -> bool {
@@ -144,48 +159,4 @@ pub fn pluralize(word: &str) -> String {
 }
 
 #[cfg(test)]
-fn two_way(singular: &str, plural: &str) {
-    if &pluralize(singular) != plural {
-        panic!(
-            "Plural of {} should be {}, not {}",
-            singular,
-            plural,
-            pluralize(singular)
-        )
-    }
-    if &singularize(plural) != singular {
-        panic!(
-            "Singular of {} should be {}, not {}",
-            plural,
-            singular,
-            singularize(plural)
-        )
-    }
-}
-
-#[test]
-fn known() {
-    two_way("equipment", "equipment");
-    two_way("good_equipment", "good_equipment");
-    two_way("rain", "rain");
-    two_way("terrain", "terrains");
-    two_way("dog", "dogs");
-    two_way("woman", "women");
-
-    two_way("calf", "calves");
-    two_way("wolf", "wolves");
-    two_way("werewolf", "werewolves");
-
-    two_way("diagnosis", "diagnoses");
-
-    two_way("glass", "glasses");
-
-    two_way("alias", "aliases");
-    two_way("status", "statuses");
-    two_way("campus", "campuses");
-    two_way("bus", "buses");
-
-    two_way("vertex", "vertices");
-    two_way("matrix", "matrices");
-    two_way("index", "indices");
-}
+mod test;
