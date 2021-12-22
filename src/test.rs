@@ -154,4 +154,35 @@ const PAIRS: &[(&'static str, &'static str)] = &[
     ("wife", "wives"),
     ("wish", "wishes"),
     ("woman", "women"),
+    //
+    ("cat", "cats"),
+    ("apple", "apples"),
+    ("onion", "onions"),
+    ("bird", "birds"),
+    ("car", "cars"),
+    ("house", "houses"),
+    ("boy", "boys"),
+    ("chair", "chairs"),
+    ("shoe", "shoes"),
+    //
+    ("bench", "benches"),
+    ("kiss", "kisses"),
+    ("fox", "foxes"),
+    ("bus", "buses"),
+    ("witch", "witches"),
+    ("box", "boxes"),
+    ("bush", "bushes"),
+    ("ash", "ashes"),
+    ("lunch", "lunches"),
+    ("class", "classes"),
+    //
+    ("baby", "babies"),
+    ("family", "families"),
+    ("party", "parties"),
+    ("agency", "agencies"),
+    ("city", "cities"),
+    //
+    // ("domino", "dominoes"),
+    //
+    ("wife", "wives"),
 ];
