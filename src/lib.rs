@@ -46,7 +46,9 @@ const IRREGULAR: &[(&'static str, &'static str)] = &[
     ("campus", "campuses"),
     ("bus", "buses"),
     ("af", "aves"),
-    ("ife", "ives"),
+    ("nife", "nives"),
+    ("life", "lives"),
+    ("wife", "wives"),
     //
     ("osis", "oses"),
     ("psis", "pses"),

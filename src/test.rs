@@ -189,4 +189,5 @@ const PAIRS: &[(&'static str, &'static str)] = &[
     ("life", "lives"),
     ("thief", "thieves"),
     ("knife", "knives"),
+    ("motive", "motives"),
 ];
