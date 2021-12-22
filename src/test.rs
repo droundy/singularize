@@ -113,6 +113,7 @@ const PAIRS: &[(&'static str, &'static str)] = &[
     ("lady", "ladies"),
     ("lass", "lasses"),
     ("leaf", "leaves"),
+    ("save", "saves"),
     ("leg", "legs"),
     ("life", "lives"),
     ("loaf", "loaves"),
